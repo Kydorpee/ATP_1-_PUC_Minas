@@ -2,7 +2,7 @@
 double des_veiculo,total_dia;
 int ver_veiculo = 1;
 
-while (ver_veiculo == 1)
+while (ver_veiculo == 1) // corrigir erro
 {
     
     Console.WriteLine("---------------------------------------");
@@ -33,7 +33,7 @@ while (ver_veiculo == 1)
             Console.WriteLine($"Valor a ser pago pelo Cliente é: {des_veiculo}");
             qtd_carro++;
         }
-        
+
         else
         {
              Console.WriteLine("Quanto tempo essa moto ficou no estacionamento?: ");
