@@ -1,28 +1,30 @@
-﻿int veiculo = 0, hora_total = 0, qtd_veiculo = 0, qtd_carro = 0, qtd_moto = 0, qtd_excedente = 0;
-double des_veiculo, total_dia;
+﻿int veiculo = 0, hora_total = 0, qtd_carro = 0, qtd_moto = 0, qtd_excedente = 0, qtd_veiculo = 0;
+double des_veiculo = 0;
 
-Console.WriteLine("Quantos veiculos deseja cadastrar:");
-int ver_veiculo = int.Parse(Console.ReadLine());
+Console.Write("Quantos veículos deseja cadastrar: ");
+int cad_veiculo = int.Parse(Console.ReadLine());
 
 
-for (int i = 0; i < ver_veiculo; i++)
+for (int i = 1; i <= cad_veiculo; i++)
 
 {
 
     Console.WriteLine("---------------------------------------");
-    Console.WriteLine("Deseja cadastrar qual tipo de veiculo?:");
+    Console.WriteLine($"Qual o tipo do {i}° veículo a ser cadastrado?: ");
     Console.WriteLine(" 1 - Carro \n 2 - Moto ");
     Console.WriteLine("---------------------------------------");
     veiculo = int.Parse(Console.ReadLine());
+    
 
 
     if (veiculo == 1)
     {
-        Console.WriteLine("Quanto tempo esse carro ficou no estacionamento?: ");
+        Console.Write("Quantas horas esse carro ficou no estacionamento?: ");
         hora_total = int.Parse(Console.ReadLine());
+
         if (hora_total <= 2)
         {
-            des_veiculo = hora_total * 15;
+            des_veiculo =  15;
         }
         else
         {
@@ -30,17 +32,18 @@ for (int i = 0; i < ver_veiculo; i++)
             des_veiculo += 15;
             qtd_excedente++;
         }
-        Console.WriteLine($"Valor a ser pago pelo Cliente é: {des_veiculo}");
+        Console.WriteLine("---------------------------------------");
+        Console.WriteLine($"Valor a ser pago pelo cliente é: R$ {des_veiculo :f2}.");
         qtd_carro++;
     }
 
-    else
+    else if (veiculo == 2)
     {
-        Console.WriteLine("Quanto tempo essa moto ficou no estacionamento?: ");
+        Console.Write("Quantas horas essa moto ficou no estacionamento?: ");
         hora_total = int.Parse(Console.ReadLine());
         if (hora_total <= 2)
         {
-            des_veiculo = hora_total * 8;
+            des_veiculo = 8;
         }
         else
         {
@@ -48,14 +51,21 @@ for (int i = 0; i < ver_veiculo; i++)
             des_veiculo += 8;
             qtd_excedente++;
         }
-        Console.WriteLine($"Valor a ser pago pelo Cliente é: {des_veiculo}");
+        Console.WriteLine("---------------------------------------");
+        Console.WriteLine($"Valor a ser pago pelo Cliente é: R$ {des_veiculo :f2}.");
         qtd_moto++;
+    }
+    else
+    {
+        Console.WriteLine("---------------------------------------");
+        Console.WriteLine("Veículo inválido");
+        break;
     }
     qtd_veiculo++;
 
 }
 
-Console.WriteLine($"Foram atendidos {qtd_veiculo} veiculos no total.");
-Console.WriteLine($"Foram atendidos {qtd_carro} carros.");
-Console.WriteLine($"Foram atendidas {qtd_moto} motos.");
-Console.WriteLine($"Foram {qtd_excedente} veiculos que excederam as 2 horas.");
+Console.WriteLine("---------------------------------------");
+Console.WriteLine($"Foram cadastrados {qtd_veiculo} veiculos no total.");
+Console.WriteLine($"{qtd_carro} carros, {qtd_moto} motos.");
+Console.WriteLine($"{qtd_excedente} veiculos excederam as 2 horas.");

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\1689483\\Documents\\Pedro\\ATP_1-_PUC_Minas\\TB_01\\TB_01.csproj": {}
+    "C:\\Users\\Pedro\\Desktop\\Desenvolvimento\\Aulas_Faculdade\\ATP_1-_PUC_Minas\\TB_01\\TB_01.csproj": {}
   },
   "projects": {
-    "C:\\Users\\1689483\\Documents\\Pedro\\ATP_1-_PUC_Minas\\TB_01\\TB_01.csproj": {
+    "C:\\Users\\Pedro\\Desktop\\Desenvolvimento\\Aulas_Faculdade\\ATP_1-_PUC_Minas\\TB_01\\TB_01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\1689483\\Documents\\Pedro\\ATP_1-_PUC_Minas\\TB_01\\TB_01.csproj",
+        "projectUniqueName": "C:\\Users\\Pedro\\Desktop\\Desenvolvimento\\Aulas_Faculdade\\ATP_1-_PUC_Minas\\TB_01\\TB_01.csproj",
         "projectName": "TB_01",
-        "projectPath": "C:\\Users\\1689483\\Documents\\Pedro\\ATP_1-_PUC_Minas\\TB_01\\TB_01.csproj",
-        "packagesPath": "C:\\Users\\1689483\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\1689483\\Documents\\Pedro\\ATP_1-_PUC_Minas\\TB_01\\obj\\",
+        "projectPath": "C:\\Users\\Pedro\\Desktop\\Desenvolvimento\\Aulas_Faculdade\\ATP_1-_PUC_Minas\\TB_01\\TB_01.csproj",
+        "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pedro\\Desktop\\Desenvolvimento\\Aulas_Faculdade\\ATP_1-_PUC_Minas\\TB_01\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\1689483\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -30,6 +30,7 @@
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {}
           }
@@ -44,10 +45,11 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.400"
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "imports": [
             "net461",
@@ -65,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
