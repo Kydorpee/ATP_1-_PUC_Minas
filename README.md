@@ -1,4 +1,3 @@
-Claro! Fiz uma versão mais organizada e profissional, mantendo a proposta de ser um repositório acadêmico para consulta.
 
 # 📚 Laboratório de Algoritmos e Lógica de Programação
 
